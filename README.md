@@ -121,22 +121,6 @@ ZeroSizeEncryptor::str::decrypt_char(text, key);
 
 The library generates a numeric key by summing the ASCII values of all characters in the key string. This value is then added to (encryption) or subtracted from (decryption) each byte of the data, with modulo 256 to keep values in the byte range.
 
-## Security Considerations
-
-⚠️ **Important**: This library provides **basic obfuscation**, not cryptographic security. It should **NOT** be used for:
-
-- Protecting sensitive data
-- Secure communications
-- Password storage
-- Any security-critical applications
-
-The encryption algorithm is:
-- Easily reversible
-- Vulnerable to frequency analysis
-- Not resistant to known-plaintext attacks
-- Provides no authentication or integrity checking
-
-**Use cases**: Configuration file obfuscation, game save file protection, or basic data scrambling where security is not a concern.
 
 ## Requirements
 
