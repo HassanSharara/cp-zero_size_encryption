@@ -1,6 +1,6 @@
 # ZeroSizeEncryptor
 
-A lightweight C++ encryption library that provides simple XOR-based encryption for various data types with minimal overhead.
+A lightweight C++ encryption library that provides smart bytes based encryption for various data types with minimal overhead.
 
 ## Overview
 
